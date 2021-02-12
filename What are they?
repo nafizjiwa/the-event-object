@@ -1,0 +1,13 @@
+An event object is like any other object. It is surrounded by curly braces {}. 
+Event objects are created when an Event occurs (triggers) in a browser.
+When event occur they are considered Fired or Raised
+They occur when a user interacts with the webpage?
+Event types are: 
+1. UI Events (user interface) events [load, unload, error, resize, scroll ...].
+2. Keyboard Events [keydown, keyup, keypress ...].
+3. Mouse Events [click, double click, mousedown, mouseup, mousemove, mouseover, mouseout ...].
+4. Focus Events [focus, blur ...].
+5. Form Events [input, change, submit ...].
+6. Mutation Events [DOMSubtreeModified, DOMNodeInserted, DOMNodeRemoved]
+Event objects tell you information about an event and the element it has happened on.
+Click event fires on ELEMENT --> Triggers a scipt/function (what to do!)
