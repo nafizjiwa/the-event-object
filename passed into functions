@@ -1,0 +1,7 @@
+When events occur a reference of event object is passed to any function that is the event handler or listener. 
+To pass arguments to a named function, the event object will first be passed to the anonymous wrapper function.  (automatically)
+Then event object is specified as a parameter (e = event) of the named function. 
+function checkName(e) {        // here function defined and parameter named
+var target = e.target;           // get target of event 
+// reference of param(e) used so properties and methods of event object can be used here.
+};
