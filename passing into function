@@ -8,9 +8,9 @@ The name (e) can be used in the function as a reference to the EVENT OBJECT.
 The reference allows the USE of the properties and methods of the EVENT OBJECT. [EG. target, ]
 
 EVENT LISTENER WITH NO PARAMETERS
-              function checkName(e) {  // here function defined and parameter named e pass as reference from call of checkUsername at 1.
-                  var target = e.target;           // get target of event 
-                 // the reference to e allows the properties and methods of event object to be used here.
+              function checkName(2.e) {  //(2) here function defined and parameter named e passed as reference from call of checkUsername at (1).
+                  var target = 3. e.target;           // get target of event 
+                 //(3) the reference to e allows the properties and methods of event object to be used here.
                  // EVENT OBJECT [PROPERTIES: target, type, cancelable; METHODS: preventDefault(), stopPropagation() ]
                 };
                 var el = document.getElementByid('username');
@@ -18,11 +18,11 @@ EVENT LISTENER WITH NO PARAMETERS
 
 
 EVENT LISTENER WITH PARAMETERS
-              function checkUsername(3.e, minlength) { //3. Named function recieves reference as first parameter of method
-                  var target = 4.e .target ;      //4. reference can now be used by this function  //get target of event
+              function checkUsername(3.e, minlength) { //(3) Named function recieves reference as first parameter of method
+                  var target = 4.e .target ;      //(4) reference can now be used by this function  //get target of event
               }
               var el = document.getElementByid('username') ;
-              el .addEventlistener('blur', function(1.e){  //1. Reference to (EVENT OBJECT) passed to anonymous function and named e in ().
-                      checkUsername(2.e, 5);           //2. Refernce to EVENT OBJECT can be passed to named function as first parameter
+              el .addEventlistener('blur', function(1.e){  //(1) Reference to (EVENT OBJECT) passed to anonymous function and named e in ().
+                      checkUsername(2.e, 5);           //(2) Refernce to EVENT OBJECT can be passed to named function as first parameter
                 } , false);
           
