@@ -1,0 +1,12 @@
+EVENT  FLOW
+The order in which events fire and they fire in two directions.
+EVENT BUBBLING 
+– Event starts at most specific node and flows outwards to least specific node.  (default for browsers)
+EVENT CAPTURING 
+-  Event starts at least specific node and flows inwards to most specific node. 
+Flow of events matter when you have an event handler on an element and its ancestor/descendant. 
+Browsers default to using bubbling when using:
+1.	DOM event handler or 2. HTML event attributes
+addEventListener all the choice of direction to trigger events
+1.	True: capturing
+2.	False:  bubbling
