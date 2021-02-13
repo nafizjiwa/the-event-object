@@ -10,3 +10,12 @@ Browsers default to using bubbling when using:
 addEventListener all the choice of direction to trigger events
 1.	True: capturing
 2.	False:  bubbling
+
+
+
+
+Creating event listeners for a lot of elements can use memory and slows down the page. 
+Event flow allows you to listen for an event on a parent. 
+Event Flow allows events to affect the containing element (parent).
+Place event handlers on containing elements and use the EVENT OBJECT’s target property to find which children the event happened on.
+
