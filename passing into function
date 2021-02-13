@@ -25,4 +25,4 @@ EVENT LISTENER WITH PARAMETERS
               el .addEventlistener('blur', function(e){
                       checkUsername(e, 5);
                 } , false);
-                sdfsdafas
+          
