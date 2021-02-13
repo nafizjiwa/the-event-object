@@ -1,7 +1,27 @@
-When events occur a reference of event object is passed to any function that is the event handler or listener. 
-To pass arguments to a named function, the event object will first be passed to the anonymous wrapper function.  (automatically)
-Then event object is specified as a parameter (e = event) of the named function. 
-function checkName(e) {        // here function defined and parameter named
-var target = e.target;           // get target of event 
-// reference of param(e) used so properties and methods of event object can be used here.
-};
+
+When events occur (or is fired) a reference of event object is passed to any function that is the event handler or listener. 
+To pass arguments to a named function,
+FIRST: The EVENT OBJECT will be passed to the anonymous wrapper function. (automatically)
+SECOND: Then EVENT OBJECT is specified as a parameter(e = event) of the named function.
+
+The name (e) can be used in the function as a reference to the OBJECT EVENT. 
+The reference allows the use of the properties and methods of the EVENT OBJECT. [EG. target, ]
+
+EVENT LISTENER WITH NO PARAMETERS
+              function checkName(e) {  // here function defined and parameter named e pass as reference from call of checkUsername at 1.
+                  var target = e.target;           // get target of event 
+                 // the reference to e allows the properties and methods of event object to be used here.
+                 // EVENT OBJECT which can be used. [Properties: target, type, cancelable; Methods: preventDefault(), stopPropagation() ]
+                };
+                var el = document.getElementByid('username');
+                el.addEventlistener('blur', 1.checkUsername, false);
+
+
+EVENT LISTENER WITH PARAMETERS
+              function checkUsername(e, minlength) {
+                  var target = e .target ;         //get target of event
+              }
+              var el = document.getElementByid('username') ;
+              el .addEventlistener('blur', function(e){
+                      checkUsername(e, 5);
+                } , false);
