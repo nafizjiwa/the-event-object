@@ -1,17 +1,17 @@
 
-When events occur (or is fired) a reference of event object is passed to any function that is the event handler or listener. 
+When events occur (or are fired) a reference of event object is passed to any function that is the event handler or event listener. 
 To pass arguments to a named function,
 FIRST: The EVENT OBJECT will be passed to the anonymous wrapper function. (automatically)
-SECOND: Then EVENT OBJECT is specified as a parameter(e = event) of the named function.
+SECOND: The EVENT OBJECT is specified as a parameter(e = event) of the named function.
 
-The name (e) can be used in the function as a reference to the OBJECT EVENT. 
-The reference allows the use of the properties and methods of the EVENT OBJECT. [EG. target, ]
+The name (e) can be used in the function as a reference to the EVENT OBJECT. 
+The reference allows the USE of the properties and methods of the EVENT OBJECT. [EG. target, ]
 
 EVENT LISTENER WITH NO PARAMETERS
               function checkName(e) {  // here function defined and parameter named e pass as reference from call of checkUsername at 1.
                   var target = e.target;           // get target of event 
                  // the reference to e allows the properties and methods of event object to be used here.
-                 // EVENT OBJECT which can be used. [Properties: target, type, cancelable; Methods: preventDefault(), stopPropagation() ]
+                 // EVENT OBJECT [PROPERTIES: target, type, cancelable; METHODS: preventDefault(), stopPropagation() ]
                 };
                 var el = document.getElementByid('username');
                 el.addEventlistener('blur', 1.checkUsername, false);
