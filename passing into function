@@ -1,5 +1,5 @@
 
-When events occur (or are fired) a reference of event object is passed to any function that is the event handler or event listener. 
+When events occur (or are fired) a reference of EVENT OBJECT is passed to any function that is the event handler or event listener. 
 To pass arguments to a named function,
 FIRST: The EVENT OBJECT will be passed to the anonymous wrapper function. (automatically)
 SECOND: The EVENT OBJECT is specified as a parameter(e = event) of the named function.
