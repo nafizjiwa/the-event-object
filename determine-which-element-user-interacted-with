@@ -1,0 +1,25 @@
+
+
+The function uses the EVENT OBJECT's target property
+This function is more flexible.
+Because it can check the length of any text input as long as it is followed by an empty element. 
+
+ if (el.value.length < minLength) {         // If length is too short set msg
+    elMsg.innerHTML = 'Username must be ' + minLength + ' characters or more';
+  } else {                                   // Otherwise
+    elMsg.innerHTML = '';                    // Clear message
+  }
+}
+
+var elUsername = document.getElementById('username');        // Get username input
+if (elUsername.addEventListener) {                          // If event listener supported
+  elUsername.addEventListener('blur', function(e) {        // On blur event
+    // NOTE: This function is checkLength() - not checkUsername()
+    checkLength(e, 5);                                   // Call checkLength()
+  }, false);                                            // Capture in bubble phase
+} else {                                               // Otherwise
+  elUsername.attachEvent('onblur', function(e) {      // IE fallback onblur
+    // NOTE: This function is checkLength() - not checkUsername()
+    checkLength(e, 5);                              // Call checkLength()
+  });
+}
