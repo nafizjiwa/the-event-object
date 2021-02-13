@@ -18,11 +18,11 @@ EVENT LISTENER WITH NO PARAMETERS
 
 
 EVENT LISTENER WITH PARAMETERS
-              function checkUsername(e, minlength) {
-                  var target = e .target ;         //get target of event
+              function checkUsername(3.e, minlength) { //3. Named function recieves reference as first parameter of method
+                  var target = 4.e .target ;      //4. reference can now be used by this function  //get target of event
               }
               var el = document.getElementByid('username') ;
-              el .addEventlistener('blur', function(e){
-                      checkUsername(e, 5);
+              el .addEventlistener('blur', function(1.e){  //1. Reference to (EVENT OBJECT) passed to anonymous function and named e in ().
+                      checkUsername(2.e, 5);           //2. Refernce to EVENT OBJECT can be passed to named function as first parameter
                 } , false);
           
