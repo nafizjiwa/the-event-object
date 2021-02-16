@@ -1,0 +1,7 @@
+MUTATION EVENTS AND OBSERVERS.  
+Whenever events are added or removed from the DOM its structure changes.  triggers a mutation event. 
+Events that trigger when the DOM is changed. 
+[DOMNodelnserted, DOMNodeRemoved, DOMSubtreeModified, DOMNodelnsertedlntoDocument]
+When lots of mutation events fire this can make a page feel slow or unresponsive. 
+Mutational events can trigger eventlisteners which modify other parts of the DOM triggering more mutational events. 
+Mutational observers are designed to wait until a script has finished
