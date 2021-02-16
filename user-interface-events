@@ -1,0 +1,4 @@
+USER INTERFACE EVENTS
+(UI) User interface events occur as a result of interaction with the browser window.
+UI events (event trigger): load, unload, error, resize, scroll.
+The event handler/ listener for UI events should be attached to browser window.
