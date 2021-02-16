@@ -4,4 +4,4 @@ The three different positions that can be retrieved when the mouse moves or is c
 Client X/Y – indicates the position of cursor within the browser
 Page X/Y – indicates the position of cursor within the page
 Screen X/Y – indicates the position of the cursor with in the screen
-The positions are all properties of an EVENT OBJECT so to access them pass event as a parameter in a function. Eg. function showPosition(event) {}
+The positions are all properties of an EVENT OBJECT so to access them pass event as a parameter in a function. Eg. function showPosition(event) {}.
